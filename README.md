@@ -1,20 +1,22 @@
-# Realtime Chat Application
+### Download
 
-### [Live Site](https://realtime-chat-application.netlify.com)
+# Create a folder
+$ mkdir actions-runner && cd actions-runnerCopied!# Download the latest runner package
+$ curl -o actions-runner-linux-x64-2.330.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.330.0/actions-runner-linux-x64-2.330.0.tar.gzCopied!# Optional: Validate the hash
+$ echo "af5c33fa94f3cc33b8e97937939136a6b04197e6dadfcfb3b6e33ae1bf41e79a  actions-runner-linux-x64-2.330.0.tar.gz" | shasum -a 256 -cCopied!# Extract the installer
+$ tar xzf ./actions-runner-linux-x64-2.330.0.tar.gz
 
-### [🌟 Become a top 1% Next.js developer in only one course](https://jsmastery.pro/next15)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
 
-![Chat Application](https://i.ytimg.com/vi/ZwFA3YMfkoc/maxresdefault.jpg)
+### Configure
 
-## Introduction
-This is a code repository for the corresponding video tutorial. 
+sudo chown -R ubuntu:ubuntu /home/ubuntu/actions-runner
 
-In this video, we will create a full Realtime Chat Application. We're going to use  React on the front end, with NodeJS + Socket.io web socket library on the back end. 
+# Give full permissions
+sudo chmod -R 755 /home/ubuntu/actions-runner
 
-By the end of this video, you will have a strong understanding of how to send and receive messages using web sockets and Socket.io to make any real-time application.
+# Switch to ubuntu user if you're root
+su - ubuntu
 
-## Launch your development career with project-based coaching - https://www.jsmastery.pro
-
-Setup:
-- run ```npm i && npm start``` for both client and server side to start the development server
+# Create the runner and start the configuration experience
+$ ./config.sh --url https://github.com/saif31617/github_runner --token ALQJBP7DK73E4IHJVNOVSL3JL2Y7YCopied!# Last step, run it!
+$ ./run.sh
