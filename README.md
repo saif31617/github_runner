@@ -25,4 +25,10 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/actions-runner
 sudo chmod -R 755 /home/ubuntu/actions-runner
 
 ### Switch to ubuntu user if you're root
+
 su - ubuntu
+
+
+
+
+<img width="910" height="486" alt="image" src="https://github.com/user-attachments/assets/41c7b200-7b4e-4cd6-9916-d96f01b277e4" />
