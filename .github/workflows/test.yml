@@ -1,0 +1,8 @@
+name: Runner Test
+on: [push]
+jobs:
+  check-runner:
+    runs-on: self-hosted
+    steps:
+      - name: Hello World
+        run: echo "The runner is working on $(hostname)!"
