@@ -1,4 +1,4 @@
-# chat application EC2 Based CICD via Github
+# chat application EC2 Based CICD via Github Runner
 
 ### Create a folder
 
